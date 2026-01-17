@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Instagram } from "lucide-react";
+import bloodhoundsLogo from "@/assets/bloodhounds-logo.png";
 
 const Hero = () => {
   return (
@@ -15,15 +16,17 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        {/* Logo Text */}
+        {/* Logo Image */}
         <div className="mb-6 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-          <span className="text-sm md:text-base text-muted-foreground tracking-[0.3em] font-body">
-            EST. 2024 • MUMBAI
-          </span>
+          <img 
+            src={bloodhoundsLogo} 
+            alt="BLOODHOUNDS Logo" 
+            className="w-48 h-48 md:w-64 md:h-64 mx-auto object-contain drop-shadow-[0_0_30px_hsl(0,85%,30%/0.5)]"
+          />
         </div>
         
         <h1 
-          className="text-6xl md:text-8xl lg:text-9xl font-display font-bold mb-4 text-gradient-blood animate-fade-up"
+          className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-4 text-gradient-blood animate-fade-up"
           style={{ animationDelay: '0.2s' }}
         >
           BLOODHOUNDS
